@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Exercise</title>
+	</head>
+	<body>
+		<h1>
+			Register
+		</h1>
+		<form action="" method="GET">
+			<lable for="firstname">First Name:</lable>
+			<input type="text" name="firstname" id="firstname" placeholder="John" required>
+			<lable for="lastname">Last Name:</lable>
+			<input type="text" name="lastname" id="lastname" placeholder="Smith" required>
+			<br>
+			<lable for="male">Male</lable>
+			<input type="radio" name="gender" value="male" id="male">
+			<lable for="female">Female</lable>
+			<input type="radio" name="gender" value="female" id="female">
+			<lable for="other">Other</lang>
+			<input type="radio" name="gender" value="other" id="other">
+			<br>
+			<lable for="email">Email:</lable>
+			<input type="email" name="email" id="email" placeholder="your email" required>
+			<lable for="password">Password:</lable>
+			<input type="password" name="password" id="password" placeholder="your password" required pattern=".{5,10}" title="5 to 10 characters">
+			<br>
+			<lable for="birthday">Birthday:</lable>
+			<select name="month">
+				<option vlaue="">Month</option>
+				<option value="January">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+			</select>
+			<select name="day">
+				<option value="">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			<select name="year">
+				<option value="">Year</option>
+				<option value="1985">1985</option>
+				<option value="1986">1986</option>
+				<option value="1987">1987</option>
+			</select>
+			<p>
+				I agree to the terms and conditions <input type="checkbox" name="terms">
+			</p>
+			<input type="submit">
+		</form>
+	</body>
+</html>
